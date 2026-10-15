@@ -8,6 +8,7 @@ import com.google.ai.edge.litertlm.ConversationConfig
 import com.google.ai.edge.litertlm.Engine
 import com.google.ai.edge.litertlm.EngineConfig
 import com.google.ai.edge.litertlm.Message
+import com.google.ai.edge.litertlm.SamplerConfig
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import javax.inject.Inject
@@ -25,7 +26,6 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import mx.tec.redacta.domain.EstadoModelo
 import mx.tec.redacta.domain.Pedido
-import com.google.ai.edge.litertlm.SamplerConfig
 
 /**
  * Gemma 3 1B, con LiteRT-LM, en el CPU del teléfono.
